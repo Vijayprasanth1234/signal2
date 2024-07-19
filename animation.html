@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dd:hover{
+            background-color: blue;
+            
+            height: 500px;
+            width: 500px;
+            transform: translateX(40px);
+            width: 450px;
+            
+        }
+        .dd{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            transition-property:all;
+            transition-duration: 3s;
+            /* transition-timing-function: linear; */
+           /* transition-timing-function: ease-in-out; */
+           /* transition: height 2s,width 4s; */
+            
+           
+
+        }
+        #red:checked~.dd{ 
+            background-color: orange;
+           
+            height: 400px;
+            width: 400px;
+
+        }
+        #scale:checked~.dd{
+            transform: scale(1.5,1.5);
+            
+        }
+        #skew:checked~.dd{
+            transform: skew(120deg);
+            
+        }
+        #translate:checked~.dd{
+            transform: translateX(40px);
+            
+        }
+        #rotate:checked~.dd{
+            transform: rotate(320deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" id="scale" name="transform">Scale
+    <input type="radio" id="skew" name="transform">skew
+    <input type="radio" name="transform" id="rotate">rotate
+    <input type="radio" name="transform" id="translate">Translate
+    <div class="dd"> </div>
+</body>
+</html>

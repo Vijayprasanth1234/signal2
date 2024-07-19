@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sky{
+            background-image: url(./8268.jpg);
+            height: 95vh;
+            width: 200vw;
+            position: relative;
+            bottom: 190px;
+            overflow-x: hidden;
+            background-size: cover;
+            background-repeat: repeat-x;
+            right: 50vw;
+            top: 250%;
+        }
+        .road{
+            background-image: url(./road.jpg);
+            background-size: cover;
+            height: 200px;
+            width: 500%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation-name: anime1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anime1 {
+            100%{
+                transform: translateX(-3400px);
+            }
+            
+        }
+        .town{
+            background-image: url(./9451-removebg-preview.png);
+            height: 250px;
+            width: 500%;
+            position: absolute;
+            bottom: 137px;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 10;
+            background-repeat: repeat-x;
+            animation: town1 20s linear infinite;
+           
+        }
+        @keyframes town1 {
+            100%{
+                transform: translate(-1600px);
+            }
+            
+        }
+        .car{
+            width: 400px;
+            left: 20%;
+            top: 56%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;
+            
+        }
+    
+        .scooter{
+            width: 50px;
+            left: 3%;
+            top: 42%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;
+            opacity: 10;
+
+        }
+        .lorry{
+            width: 50px;
+            left: 4%;
+            top: 56%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;     
+
+        }
+    .vijay{
+    background-color: black;
+    height: 200px;
+    width: 120px;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 20;
+    left: 47%;
+    
+
+}
+.su{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: red1;
+    
+}
+.ak{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: yellow1;
+    
+}
+.vi{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: green1;
+}
+@keyframes red1 {
+    0%,100%{
+        background-color: red;
+    }
+    
+}
+@keyframes yellow1 {
+    0%,100%{
+        background-color: yellow;
+    }
+    
+}
+@keyframes green1 {
+    0%,100%{
+        background-color: green;
+    }
+}
+.su{
+    animation-name: red1;
+    animation-duration: 2s;
+  
+   
+}
+.ak{
+    animation-name: yellow1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+   
+    
+    
+}
+.vi{
+    animation-name: green1;
+    animation-delay: 4s;
+    animation-duration: 4s;
+  
+}
+.car{
+    animation-name: car1;
+    animation-duration: 8s;
+    animation-delay: 2s;   
+    
+}
+.scooter{
+   
+    animation-name: car2;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
+   
+   
+}
+.lorry{
+    animation-name: car3;
+    animation-duration: 8s;
+    animation-delay: 3s;
+   
+    
+}
+@keyframes car1 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+
+
+@keyframes car2 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+@keyframes car3 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .sky{
+            background-image: url(./8268.jpg);
+            height: 95vh;
+            width: 100vh;
+            position: relative;
+            bottom: 190px;
+            overflow-x: hidden;
+            background-size: cover;
+            background-repeat: repeat-x;
+        }
+        .road{
+            background-image: url(./road.jpg);
+            background-size: cover;
+            height: 200px;
+            width: 1500%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation-name: anime1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anime1 {
+            100%{
+                transform: translateX(-3400px);
+            }
+            
+        }
+        .town{
+            background-image: url(./9451-removebg-preview.png);
+            height: 250px;
+            width: 500%;
+            position: absolute;
+            bottom: 137px;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 10;
+            background-repeat: repeat-x;
+            animation: town1 20s linear infinite;
+           
+        }
+        @keyframes town1 {
+            100%{
+                transform: translate(-1600px);
+            }
+            
+        }
+        .car{
+            width: 400px;
+            left: 20%;
+            top: 56%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;
+            
+        }
+    
+        .scooter{
+            width: 50px;
+            left: 3%;
+            top: 42%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;
+            opacity: 10;
+
+        }
+        .lorry{
+            width: 50px;
+            left: 4%;
+            top: 56%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 11;     
+
+        }
+    .vijay{
+    background-color: black;
+    height: 200px;
+    width: 90px;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 20;
+    left: 47%;
+    
+
+}
+.su{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: red1;
+    
+}
+.ak{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: yellow1;
+    
+}
+.vi{
+   
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-left: 100px;
+    z-index: 20;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    opacity: 0.8;
+    animation-name: green1;
+}
+@keyframes red1 {
+    0%,100%{
+        background-color: red;
+    }
+    
+}
+@keyframes yellow1 {
+    0%,100%{
+        background-color: yellow;
+    }
+    
+}
+@keyframes green1 {
+    0%,100%{
+        background-color: green;
+    }
+}
+.su{
+    animation-name: red1;
+    animation-duration: 2s;
+  
+   
+}
+.ak{
+    animation-name: yellow1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+   
+    
+    
+}
+.vi{
+    animation-name: green1;
+    animation-delay: 4s;
+    animation-duration: 4s;
+  
+}
+.car{
+    animation-name: car1;
+    animation-duration: 8s;
+    animation-delay: 2s;   
+    
+}
+.scooter{
+   
+    animation-name: car2;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
+   
+   
+}
+.lorry{
+    animation-name: car3;
+    animation-duration: 8s;
+    animation-delay: 3s;
+   
+    
+}
+@keyframes car1 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+
+
+@keyframes car2 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+@keyframes car3 {
+    0%,30%{
+        transform: translateX(0px);
+       
+    }
+    30%,60%{
+        transform: translateX(200px);
+        
+    }
+    60%,90%{
+        transform: translateX(1820px);
+
+        
+    }
+}
+
+    
+}
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+    
+
+  
+    </style>
+</head>
+
+<body >
+    <div class="vijay"></div>
+    <div class="sky"></div>
+    <div class="road"></div>
+    <div class="town"></div>
+    <div>
+        <div class="su"></div>
+        <div class="ak"></div>
+        <div class="vi"> </div>
+        <div class="od"></div>
+        <div class="sus"></div>
+
+        <div class="car"><img src="./icons8-car-2--unscreen.gif" alt="" class="carimg" height="150px" width="270px"></div>
+        <div class="scooter"><img src="./Car-unscreen.gif" alt="" class="scooterimg"></div>
+        <div class="lorry"><img src="./Bike-1-2-unscreen.gif" class="lorryimg"></div>
+    </div>
+    
+        
+    </div>
+    
+    
+</body>
+</html>
